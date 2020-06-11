@@ -55,7 +55,7 @@
       <HintPath>packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
     </Reference>
     <Reference Include="Interop.WinHttp">
-      <HintPath>..\..\..\Switcher\Interop.WinHttp.dll</HintPath>
+      <HintPath>F:\Switcher\Interop.WinHttp.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MaterialDesignColors, Version=1.2.6.1513, Culture=neutral, processorArchitecture=MSIL">
@@ -91,6 +91,9 @@
     <Compile Include="core\FlatButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="core\flatbuttons.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="core\HostsCore.cs" />
     <Compile Include="core\LogCore.cs" />
     <Compile Include="core\PhpCore.cs" />
@@ -109,6 +112,9 @@
     <Compile Include="UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="core\FlatButton.resx">
+      <DependentUpon>FlatButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

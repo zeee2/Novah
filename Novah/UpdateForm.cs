@@ -39,7 +39,7 @@ namespace Novah
                 win.Send();
                 win.WaitForResponse();
             }
-            catch { MessageBox.Show(this, "\rServer Connection Error", " Debian "); Environment.Exit(0); }
+            catch { MessageBox.Show(this, "\rServer Connection Error", "Novah"); Environment.Exit(0); }
             string result = Encoding.UTF8.GetString(win.ResponseBody);
             return result;
         }

@@ -15,7 +15,7 @@ namespace Novah.core
         private Rectangle borderRectangle;
 
         private bool active = false;
-
+        private System.Diagnostics.EventLog eventLog1;
         private StringFormat stringFormat = new StringFormat();
 
         public override Cursor Cursor { get; set; } = Cursors.Hand;
@@ -48,6 +48,20 @@ namespace Novah.core
             active = true;
             
             base.BackColor = ColorTranslator.FromHtml("#ffffff");
+        }
+
+        private void InitializeComponent()
+        {
+            this.eventLog1 = new System.Diagnostics.EventLog();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         protected override void OnMouseUp(MouseEventArgs e)

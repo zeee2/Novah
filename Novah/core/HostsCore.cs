@@ -39,7 +39,7 @@ namespace Novah.core
                         catch
                         {
                             LogCore.Log(ex);
-                            MessageBox.Show("Error! \r\rPlease Send Discrod Nerina#4444 the Switcher Logs", "NOVAH", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Error! \r\rPlease Send Discrod Nerina#4444 the Switcher Logs", "Novah", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             string filepath = Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData) + "\\novahlog.txt";
                             Process.Start(filepath);
                             Environment.Exit(0);
@@ -51,7 +51,7 @@ namespace Novah.core
             catch (Exception ex)
             {
                 LogCore.Log(ex);
-                MessageBox.Show("Error! \r\rPlease Send Discrod Nerina#4444 the Switcher Logs", "NOVAH", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error! \r\rPlease Send Discrod Nerina#4444 the Switcher Logs", "Novah", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 string filepath = Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData) + "\\novahlog.txt";
                 Process.Start(filepath);
                 Environment.Exit(0);

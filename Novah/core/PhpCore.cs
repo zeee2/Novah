@@ -21,7 +21,7 @@ namespace Novah.core
             }
             catch
             {
-                MessageBox.Show("Connection Error", "NOVAH", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Connection Error", "Novah", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
             return win.ResponseText;
