@@ -1,2 +1,2 @@
 # NOVAH(DebianSwitcher)
- Novah is a debian's noew switcher
+ Novah is a debian's new switcher
